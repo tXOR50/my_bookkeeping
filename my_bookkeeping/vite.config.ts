@@ -3,11 +3,12 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
+  base: '/my_bookkeeping/',
   server: {
     watch: {
-      usePolling: true,  // Force Vite to detect file changes
+      usePolling: true,  
     },
-    host: true,  // Allow access from network (optional)
-    strictPort: true,  // Ensure it binds to the specified port
+    host: true,  
+    strictPort: true,  
   }
 })
